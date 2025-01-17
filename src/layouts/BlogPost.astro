@@ -1,0 +1,22 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>{frontmatter.title}</h1>
+        <time datetime={frontmatter.pubDate.toISOString()}>
+          {frontmatter.pubDate.toLocaleDateString('de-DE')}
+        </time>
+        <slot />
+      </article>
+    </main>
+  </body>
+</html> 

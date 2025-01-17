@@ -1,3 +1,9 @@
+---
+title: "Auftakt zur Serie: Prompt-driven Development"
+pubDate: 2024-01-17
+description: "Software-Entwicklung wird aufgrund von KI nie mehr sein wie vor noch einem Jahr. Prompt-driven Development ist die aktuellste Umwälzung, die mit Hilfe von natürlicher Sprache den Bau von Software ermöglicht."
+---
+
 # Auftakt zur Serie: Prompt-driven Development
 
 > tl;dr: Software-Entwicklung wird aufgrund von KI nie mehr sein wie vor noch einem Jahr. Prompt-driven Development ist die aktuellste Umwälzung, die mit Hilfe von natürlicher Sprache den Bau von Software ermöglicht. Ich bin als Softwerker selbst massiv davon betroffen. In einer Serie hier werde ich versuchen, meine Erkenntnisse und Einschätzungen nachvollziehbar zu teilen.
@@ -20,11 +26,11 @@ Letzte Meta-Information, bevor ich zum eigentlichen Inhalt komme. Ich habe vor
 
 # Was bezeichne ich als "Prompt-driven development"
 
-![Completion der Definition von prompt driven development](./01_definition_completion.png)
+![Completion der Definition von prompt driven development](./images/01_definition_completion.png)
 
 Das war die Vervollständigung meines Editors, als ich damit anfing, diesen Blogpost zu schreiben.
 
-![Zweifel daran, dass ich überhaupt schreiben sollte](./02_hilfe_überall.png)
+![Zweifel daran, dass ich überhaupt schreiben sollte](./images/02_hilfe_überall.png)
 Bin ich damit schon eigentlich jetzt fertig mit dem Artikel? 🤔
 
 Nein, natürlich nicht. Aber es zeigt, wie sehr KI schon in meinem täglichen Leben angekommen ist. Und mit Prompt-driven Development geht das ganze einen Schritt weiter.
@@ -32,14 +38,14 @@ Nein, natürlich nicht. Aber es zeigt, wie sehr KI schon in meinem täglichen Le
 # Prompt-driven development – in eigenen Worten
 
 "Prompt-driven Development **setzt beim Erstellen von Software "die KI" auf den Fahrersitz**. Anstatt dass ich als Entwickler Software schreibe und einen Co-Piloten dabei habe, der mich unterstützt, wenn ich ihn frage, übergebe ich ihm das Steuer und sage ihm, wohin ich will. Er fährt dann die Strecke und ich kann mich entspannt zurücklehnen.
-![Der erfahrene Software-Entwickler auf dem Beifahrersitz eines Rennfahrers](./05_renn_beifahrer.png "Der erfahrene Software-Entwickler auf dem Beifahrersitz eines Rennfahrers")
+![Der erfahrene Software-Entwickler auf dem Beifahrersitz eines Rennfahrers](./images/05_renn_beifahrer.jpg "Der erfahrene Software-Entwickler auf dem Beifahrersitz eines Rennfahrers")
 
 
 So ist zumindest der Sales-Pitch. In Wirklichkeit ist es eher so, dass ich dem Assistenten sage, wohin ich will. Der Assistent fährt und ich sollte dabei ziemlich genau aufpassen, ob er auch den Weg nimmt, den ich implizit im Kopf hatte, als ich ihm das Ziel nannte. Zum Beispiel weil dies der mir bekannteste, kürzeste oder auch sicherste Weg ist.
 
 Es handelt sich also um eine **Inversion der Kontrolle**: Nachdem uns Assistenten bisher in der IDE unterstützten und uns auf Fehler hinwiesen, die wir gerade begingen, drehen wir den Kontrollfluss um und kontrollieren als humanoide die Maschinen. Spätestens an dieser Stelle könnte der Eine oder Andere ein ungutes Bauchgefühl bekommen, ob das denn so eine gute Idee ist. Aber dazu später mehr.
 
-_Der Klarstellung halber: "Prompt-driven development" ist ein von mir derzeit verwendeter Term. Ich habe diesen bisher noch nirgends gesehen. Ich nutze ihn, um ihn bzüglich der Kontroll-Inversion gegenüber "Prompt Engineering" abzugrenzen._
+_Der Klarstellung halber: "Prompt-driven development" ist ein von mir derzeit verwendeter Term. Ich habe diesen bisher noch nirgends gesehen. Ich nutze ihn, um ihn bezüglich der Kontroll-Inversion gegenüber "Prompt Engineering" abzugrenzen._
 
 # Hat da jemand Low-Code gesagt?
 
@@ -57,7 +63,7 @@ Zusammen mit den ersten beiden Punkten war damit für mich der Reiz von Low-Code
 
 Der wesentliche Aspekt: Prompt-driven development ist lediglich eine Methode, um Artefakte zu erzeugen, aber auch zu verändern (meist Quellcode, aber zu anderen Aspekten kommen wir später auch noch).
 
-![Der Software-Prozess nach der Erstellung](./03_software_prozess.png)
+![Der Software-Prozess nach der Erstellung](./images/03_software_prozess.png)
 Ok, ich nehme an, ihr habt verstanden, worauf ich hinaus will.
 
 Bei Prompt-driven development entsteht noch immer **Software, "wie wir sie kennen"**. Dies geschieht einfach nur unter Zuhilfenahme von anderen Werkzeugen. Und diese können einen irrsinnig beschleunigen, wenn man sie richtig einsetzt. Und sie können einen mit irrsinniger Beschleunigung in die falsche Richtung schicken, wenn man nicht aufpasst.
@@ -77,4 +83,5 @@ Beim nächsten Mal ... habe ich heute auch noch keine Ahnung, worüber ich schre
 Ich freue mich jedenfalls über Anregungen und Kommentare!
 
 Rants zu Thema No-Code werden natürlich auch immer gerne genommen ;)
-![Zum Abschluss eine lustige Halluzination](./00_halluzination.png)
+
+![Zum Abschluss eine lustige Halluzination](./images/00_halluzination.png)
