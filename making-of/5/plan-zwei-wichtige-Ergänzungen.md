@@ -66,37 +66,25 @@ Blogpost über "responsible-vibe-mcp" als konkrete Lösung für die im vorherige
 - [x] Interaktionsbeispiele eingebaut (diese Konversation als Meta-Beispiel)
 - [x] Prozessdokumentation als Engineering erklärt
 - [x] Call-to-Action formuliert
-- [x] Verschiedene Software-Entwicklungsprozesse ausarbeiten (Greenfield, Features, Bugfix, TDD)
-- [x] Erkenntnis ergänzen: Qualität durch Prozess betrifft alle digitalen Arbeitsprozesse (nicht nur Software)
-- [x] Blogpost in Datei überführt (/Users/oliverjaegle/projects/privat/blog/src/content/blog/von-autopilot-frage-zu-responsible-development.md)
+- [ ] Verschiedene Software-Entwicklungsprozesse ausarbeiten (Greenfield, Features, Bugfix, TDD)
+- [ ] Erkenntnis ergänzen: Qualität durch Prozess betrifft alle digitalen Arbeitsprozesse (nicht nur Software)
 - [ ] Gesamten Text auf Länge und Stil prüfen (2000-4000 Worte, LinkedIn-gerecht)
 
 ### Completed
 - [x] Ersten Entwurf geschrieben
 - [x] Wichtiges Feedback erhalten zu Einführung und LLM-Charakterisierung
 - [x] Vollständige Überarbeitung mit respektvoller LLM-Darstellung und besserem Qualitäts-/Vertrauensfokus
-- [x] Wichtige Ergänzungen eingearbeitet: Verschiedene Workflows und universelle Anwendbarkeit
-- [x] Vollständiger Blogpost erstellt und in Blog-Datei gespeichert
 
 ## Illustration
 
 ### Phase Entrance Criteria:
-- [x] Content ist geschrieben und folgt dem Story-Outline
-- [x] Narrative Konsistenz und persönliche Stimme sind gewährleistet
-- [x] Content-Länge entspricht dem gewählten Format
-- [x] Content bleibt innerhalb der definierten Scope-Grenzen
+- [ ] Content ist geschrieben und folgt dem Story-Outline
+- [ ] Narrative Konsistenz und persönliche Stimme sind gewährleistet
+- [ ] Content-Länge entspricht dem gewählten Format
+- [ ] Content bleibt innerhalb der definierten Scope-Grenzen
 
 ### Tasks
-- [ ] Strategische Positionen für visuelle Elemente identifizieren
-- [ ] Hero-Image für den Post erstellen/finden
-- [ ] Workflow-Diagramm für verschiedene Prozesse visualisieren
-- [ ] Screenshot/Beispiel der Plan-Datei Dokumentation
-- [ ] Metaphorische Bilder für Konzepte (Orchestrierung, Vertrauen, etc.)
-- [ ] Visuelle Konsistenz und professionelles Erscheinungsbild sicherstellen
-- [ ] Accessibility und Plattform-Kompatibilität prüfen
-
-### Completed
-*None yet*
+- [ ] *To be added when this phase becomes active*
 
 ### Completed
 *None yet*
