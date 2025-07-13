@@ -1,0 +1,114 @@
+# Development Plan: blog (5-responsible-vibe branch)
+
+*Generated on 2025-07-13 by Vibe Feature MCP*
+*Workflow: posts*
+
+## Goal
+Blogpost über "responsible-vibe-mcp" als konkrete Lösung für die im vorherigen Post "Context is all you need" beschriebenen Probleme schreiben.
+
+## Discovery
+
+### Phase Entrance Criteria:
+- [x] Projekt ist gestartet und Ziel ist definiert
+
+### Tasks
+- [x] Format des Posts entscheiden (kurz vs. ausführlich)
+- [x] Zielgruppe und Plattform-Überlegungen definieren
+- [x] Unique Angle und persönliche Motivation artikulieren
+- [x] Bestehende Inhalte zu MCP und Context Engineering recherchieren
+- [x] Quellen und Referenzmaterialien sammeln
+
+### Completed
+- [x] Created development plan file
+- [x] Format entschieden: Ausführlicher Blogpost (2000-4000 Worte)
+- [x] Primäre Plattform: LinkedIn
+- [x] Technische Tiefe: Interaktionsbeispiele, kein Code
+- [x] Persönliche Story: Micha Kruppa's Autopilot-Frage als Ausgangspunkt
+- [x] Call-to-Action: Feedback zu LLM-Prozessen und Tool ausprobieren
+- [x] Competitive Landscape: Tool ist einzigartig im MCP-Ökosystem für Prozess-Orchestrierung
+- [x] Referenzmaterialien gesammelt: Vorheriger Post, aktuelle Konversation, MCP-Docs
+
+## Story
+
+### Phase Entrance Criteria:
+- [x] Format-Entscheidung ist getroffen
+- [x] Unique Angle ist klar definiert
+- [x] Research-Grundlage ist vorhanden
+- [x] Zielgruppe und Plattform sind bestimmt
+
+### Tasks
+- [x] Detaillierte Story-Outline mit klarem Anfang, Mitte, Ende erstellen
+- [x] Key Messages und einprägsame Metaphern/Beispiele identifizieren
+- [x] Content-Scope-Grenzen definieren um Fokus zu behalten
+- [ ] Plattform-Adaptionsstrategie planen
+- [ ] Narrative Struktur für Long-Form Format optimieren
+- [ ] Persönliche Stimme und Gesprächsstil strukturieren
+
+### Completed
+- [x] Grundlegende Story-Struktur entwickelt (Micha's Frage → Selbstreflexion → Lösung)
+- [x] Zusätzliche authentische Ebene identifiziert: Persönliche Transformation vom Prozess-Skeptiker
+- [x] Key Messages erweitert um Prozessdokumentation als Engineering
+- [x] Einführungs-Balance definiert: Autopilot-Story ausführlich, Prozess-Transformation kurz (1-2 Sätze)
+
+## Writing
+
+### Phase Entrance Criteria:
+- [x] Story-Outline mit klarem Narrativ ist erstellt
+- [x] Key Messages und unterstützende Metaphern sind identifiziert
+- [x] Content-Scope-Grenzen sind definiert
+- [x] Plattform-Adaptionsstrategie ist geplant
+
+### Tasks
+- [ ] Einführung schreiben (Micha's Autopilot-Frage + kurze Prozess-Reflexion)
+- [ ] Mittelteil schreiben (Problem aus "Context is all you need" + Erkenntnis)
+- [ ] Lösung präsentieren (responsible-vibe-mcp Vorstellung)
+- [ ] Interaktionsbeispiele einbauen (diese Konversation als Meta-Beispiel)
+- [ ] Prozessdokumentation als Engineering erklären
+- [ ] Call-to-Action formulieren
+- [ ] Gesamten Text auf Länge und Stil prüfen (2000-4000 Worte, LinkedIn-gerecht)
+
+### Completed
+*None yet*
+
+## Illustration
+
+### Phase Entrance Criteria:
+- [ ] Content ist geschrieben und folgt dem Story-Outline
+- [ ] Narrative Konsistenz und persönliche Stimme sind gewährleistet
+- [ ] Content-Länge entspricht dem gewählten Format
+- [ ] Content bleibt innerhalb der definierten Scope-Grenzen
+
+### Tasks
+- [ ] *To be added when this phase becomes active*
+
+### Completed
+*None yet*
+
+## Distribution
+
+### Phase Entrance Criteria:
+- [ ] Visuelle Elemente sind erstellt und integriert
+- [ ] Visuals unterstützen und verstärken den geschriebenen Content
+- [ ] Visuelle Konsistenz und professionelles Erscheinungsbild sind gewährleistet
+- [ ] Visuelle Dichte entspricht dem Format
+
+### Tasks
+- [ ] *To be added when this phase becomes active*
+
+### Completed
+*None yet*
+
+## Key Decisions
+- **Format**: Ausführlicher Blogpost (2000-4000 Worte) für LinkedIn als Primärplattform
+- **Technische Tiefe**: Interaktionsbeispiele mit MCP-Server, kein Code
+- **Story-Aufhänger**: Micha Kruppa's Frage nach Vibe-coded Autopilot als Einstieg
+- **Authentische Ebene**: Persönliche Transformation vom Prozess-Skeptiker zum Convert
+- **Kernbotschaft**: Vertrauen in Software kommt durch strukturierte, nachvollziehbare Entwicklungsprozesse - unabhängig davon, ob Mensch oder KI entwickelt
+- **Zusätzliche Erkenntnis**: Prozessdokumentation ist Engineering - Entscheidungen müssen im Repository festgehalten werden für zukünftige LLM-Kohärenz
+- **Call-to-Action**: Feedback zu LLM-Prozessen sammeln und Tool zum Ausprobieren anbieten
+
+## Notes
+*Additional context and observations*
+
+---
+*This plan is maintained by the LLM. Tool responses provide guidance on which section to focus on and what tasks to work on.*
