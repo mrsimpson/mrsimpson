@@ -2,7 +2,7 @@
 title: "Von der Autopilot-Frage zur Responsible Development"
 pubDate: 2025-07-13
 description: "Wie eine provokante Frage über KI-entwickelte Autopiloten zur Erkenntnis führte, dass Vertrauen in Software durch strukturierte Prozesse entsteht - und wie responsible-vibe-mcp diese Erkenntnis in die Praxis umsetzt."
-tags: ['ai', 'development', 'responsible-development', 'mcp', 'context-engineering', 'process']
+tags: ['ai', 'development', 'responsible-development', 'mcp', 'context-engineering', 'process', 'llm', 'orchestration', 'software-engineering', 'automation']
 ---
 
 # Von der Autopilot-Frage zur Responsible Development
@@ -154,4 +154,4 @@ Die Zukunft der digitalen Arbeit liegt nicht in der Konkurrenz zwischen Mensch u
 
 **Wie orchestriert ihr eure LLM-Arbeitsprozesse? Welche Erfahrungen habt ihr mit strukturierten vs. unstrukturierten KI-Interaktionen gemacht?**
 
-**Wer Lust hat, responsible-vibe-mcp auszuprobieren:** [GitHub Link] - Feedback und Erfahrungsberichte sind sehr willkommen!
+**Wer Lust hat, responsible-vibe-mcp auszuprobieren:** [GitHub Repository](https://github.com/mrsimpson/vibe-feature-mcp) - Feedback und Erfahrungsberichte sind sehr willkommen!
