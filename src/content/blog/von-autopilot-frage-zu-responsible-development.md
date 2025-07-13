@@ -28,6 +28,8 @@ Verschiedene Ansätze haben versucht, diese Lücke zu schließen:
 - **Agenten-Systeme** die automatisch den nächsten Schritt bestimmen (nehmen dem LLM die Flexibilität)
 - **IDE-Integration** wo Entwickler manuell die Richtung vorgeben (überfordert uns Menschen bei komplexen Projekten)
 
+![Überforderung durch Information Overload](./images/13-robot-information-overload.png)
+
 Aber alle diese Ansätze haben ein gemeinsames Problem: Sie versuchen, das LLM zu kontrollieren oder zu ersetzen, statt seine Stärken intelligent zu orchestrieren.
 
 ## Die Erkenntnis: Engineering ist Entscheidungsdokumentation
@@ -52,6 +54,8 @@ Aus diesen Erkenntnissen heraus habe ich "responsible-vibe-mcp" entwickelt - ein
 
 Das System erkennt, dass verschiedene Aufgaben völlig unterschiedliche Prozesse brauchen:
 
+![Das richtige Werkzeug zur richtigen Zeit](./images/15-right-tool-right-time.png)
+
 - **Greenfield-Projekte**: Ideation → Architecture → Plan → Code → Document  
   *Für neue Projekte, die gründliche Vorplanung brauchen*
 
@@ -67,41 +71,32 @@ Das System erkennt, dass verschiedene Aufgaben völlig unterschiedliche Prozesse
 - **Content Creation**: Discovery → Story → Writing → Illustration → Distribution  
   *Für Blogposts, Präsentationen, Dokumentationen*
 
+![Greenfield Workflow Screenshot](./images/screenshot-greenfield-workflow.png)
+
 **Das Geniale:** Das LLM bekommt nicht nur strategische Richtung, sondern den **richtigen Prozess für die jeweilige Aufgabe**. Ein Bugfix braucht andere Schritte als ein Greenfield-Projekt, und das System passt sich automatisch an.
 
-**Wie funktioniert das konkret?** Das LLM ruft nach jeder Benutzerinteraktion automatisch `whats_next()` auf und erhält phasenspezifische Anweisungen. Es behält seine volle kreative Flexibilität, bekommt aber die strategische Orientierung, die ihm normalerweise fehlt.
+**Wie funktioniert das konkret?** Das LLM ruft nach jeder Benutzerinteraktion automatisch `whats_next()` auf und erhält phasenspezifische Anweisungen. Das ist also so etwas wie "phasenspezifisches Prompt-Engineering".
+Über den Plan, der dabei übermittelt wird, wird der Kontext gefüttert und kontinuierlich erweitert.
+
+Das LLM behält seine volle kreative Flexibilität, bekommt aber die strategische Orientierung, die ihm normalerweise fehlt.
 
 ## Meta-Beweis: Diese Konversation selbst
 
 Das Schöne ist: Diese Konversation hier ist der lebende Beweis für die Funktionsweise. Während wir diesen Blogpost entwickeln, orchestriert das System unseren Entwicklungsprozess und dokumentiert ihn automatisch:
 
-```
-## Discovery
-### Completed
-- [x] Format entschieden: Ausführlicher Blogpost
-- [x] Primäre Plattform: LinkedIn
-- [x] Story-Aufhänger: Micha Kruppa's Autopilot-Frage
-
-## Story  
-### Completed
-- [x] Narrative Struktur entwickelt
-- [x] Key Messages identifiziert
-
-## Writing
-### Tasks
-- [x] Einführung überarbeitet (Qualität/Vertrauen-Fokus)
-- [x] LLM-Charakterisierung respektvoller gestaltet
-- [x] Verschiedene Workflows ausgearbeitet
-- [ ] Gesamten Text finalisieren
-```
+![Unser aktueller Entwicklungsplan](./images/screenshot-development-plan-post.png)
 
 Diese Dokumentation ist nicht nur für Menschen wertvoll - sie ermöglicht es auch zukünftigen LLM-Interaktionen, kohärent an diesem Projekt weiterzuarbeiten, ohne den Kontext zu verlieren.
+
+![Posts Workflow mit Story-Phase Anweisungen](./images/screenshot-posts-workflow-with-story-phase-instructions.png)
 
 ## Warum das funktioniert
 
 **Strategische Führung ohne Mikromanagement**: Das LLM bekommt klare Richtung für den nächsten Schritt, behält aber seine Kreativität und Problemlösungskompetenz.
 
 **Kontextspezifische Prozesse**: Jede Aufgabe bekommt den Workflow, der zu ihr passt - von schnellen Bugfixes bis zu umfassenden Greenfield-Projekten.
+
+![Phasenspezifische Arbeit](./images/16-phase-specific-work.png)
 
 **Phasenspezifischer Kontext**: Statt alles gleichzeitig zu laden, bekommt das LLM nur die für die aktuelle Phase relevanten Informationen und Tools.
 
@@ -114,6 +109,8 @@ Diese Dokumentation ist nicht nur für Menschen wertvoll - sie ermöglicht es au
 ## Responsible Development in der Praxis
 
 Was bedeutet das für die tägliche Arbeit? 
+
+![Implementation in der Praxis](./images/19-implementation-practice.png)
 
 **Für Menschen**: Wir können uns auf die kreativen und strategischen Aspekte konzentrieren, während das System die Prozess-Compliance und Dokumentation sicherstellt.
 
@@ -138,6 +135,8 @@ Responsible Development bedeutet:
 ## Fazit: Vertrauen durch intelligente Orchestrierung
 
 Zurück zu Micha's ursprünglicher Frage: Würde ich mich in ein Auto mit einem responsible-vibe-orchestrierten Autopiloten setzen? Wenn der Entwicklungsprozess transparent, nachvollziehbar und gut dokumentiert ist - definitiv eher als in eines mit unstrukturiert entwickelter Software, egal von wem sie stammt.
+
+![Zukunft der Zusammenarbeit](./images/18-future-collaboration.png)
 
 Die Zukunft der digitalen Arbeit liegt nicht in der Konkurrenz zwischen Mensch und KI, sondern in der intelligenten Orchestrierung beider durch strukturierte, verantwortungsvolle Prozesse, die die Stärken beider Seiten optimal nutzen.
 
