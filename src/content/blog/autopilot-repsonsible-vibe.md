@@ -154,4 +154,4 @@ Die Zukunft der digitalen Arbeit liegt nicht in der Konkurrenz zwischen Mensch u
 
 **Wie orchestriert ihr eure LLM-Arbeitsprozesse? Welche Erfahrungen habt ihr mit strukturierten vs. unstrukturierten KI-Interaktionen gemacht?**
 
-**Wer Lust hat, responsible-vibe-mcp auszuprobieren:** [GitHub Repository](https://github.com/mrsimpson/vibe-feature-mcp) - Feedback und Erfahrungsberichte sind sehr willkommen!
+**Wer Lust hat, responsible-vibe-mcp auszuprobieren:** [GitHub Repository](https://github.com/mrsimpson/responsible-vibe-mcp) - Feedback und Erfahrungsberichte sind sehr willkommen!
