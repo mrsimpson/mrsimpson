@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="de" data-astro-cid-vg3gbttd> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Interaktiver Terminal-CV von Oliver Jägle - Fullest Stack Developer"><title>Oliver Jägle - Terminal CLI</title><style>body{margin:0;padding:0;height:100vh;overflow:hidden;background:#1e1e1e;font-family:Monaco,Menlo,Ubuntu Mono,monospace}.cli-container[data-astro-cid-vg3gbttd]{height:100vh;width:100%;background:#1e1e1e;color:#fff;display:flex;flex-direction:column}.terminal-header[data-astro-cid-vg3gbttd]{height:40px;background:#2d2d2d;display:flex;align-items:center;padding:0 15px;border-bottom:1px solid #404040}.terminal-controls[data-astro-cid-vg3gbttd]{display:flex;gap:8px}.control[data-astro-cid-vg3gbttd]{width:12px;height:12px;border-radius:50%}.close[data-astro-cid-vg3gbttd]{background:#ff5f57}.minimize[data-astro-cid-vg3gbttd]{background:#ffbd2e}.maximize[data-astro-cid-vg3gbttd]{background:#28ca42}.terminal-title[data-astro-cid-vg3gbttd]{flex:1;text-align:center;color:#fff;font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:13px;font-weight:500}.terminal-content[data-astro-cid-vg3gbttd]{flex:1;padding:15px;background:#1e1e1e;overflow-y:auto;font-size:14px;line-height:1.4}.terminal-output[data-astro-cid-vg3gbttd]{margin-bottom:10px;white-space:pre-wrap}.terminal-input-line[data-astro-cid-vg3gbttd]{display:flex;align-items:center;margin-top:10px}.terminal-prompt[data-astro-cid-vg3gbttd]{color:#0f0;margin-right:8px}.terminal-input[data-astro-cid-vg3gbttd]{background:transparent;border:none;outline:none;color:#fff;font-family:inherit;font-size:inherit;flex:1}.terminal-cursor[data-astro-cid-vg3gbttd]{display:inline-block;width:8px;height:16px;background:#fff;animation:blink 1s infinite;margin-left:2px}@keyframes blink{0%,50%{opacity:1}51%,to{opacity:0}}.welcome-art[data-astro-cid-vg3gbttd]{color:#0f0;font-weight:700;margin-bottom:20px}.command-help[data-astro-cid-vg3gbttd]{color:#888;margin-left:20px}.error[data-astro-cid-vg3gbttd]{color:#ff5f57}.success[data-astro-cid-vg3gbttd]{color:#0f0}.info[data-astro-cid-vg3gbttd]{color:#87ceeb}
+</style></head> <body data-astro-cid-vg3gbttd> <div class="cli-container" data-astro-cid-vg3gbttd> <div class="terminal-header" data-astro-cid-vg3gbttd> <div class="terminal-controls" data-astro-cid-vg3gbttd> <span class="control close" data-astro-cid-vg3gbttd></span> <span class="control minimize" data-astro-cid-vg3gbttd></span> <span class="control maximize" data-astro-cid-vg3gbttd></span> </div> <div class="terminal-title" data-astro-cid-vg3gbttd>Oliver Jägle - Terminal CV</div> </div> <div class="terminal-content" id="terminal-content" data-astro-cid-vg3gbttd> <div class="welcome-art" data-astro-cid-vg3gbttd>
+┌─────────────────────────────────────────────────────────────────┐
+│                                                                 │
+│  ██████╗ ██╗     ██╗██╗   ██╗███████╗██████╗                   │
+│ ██╔═══██╗██║     ██║██║   ██║██╔════╝██╔══██╗                  │
+│ ██║   ██║██║     ██║██║   ██║█████╗  ██████╔╝                  │
+│ ██║   ██║██║     ██║╚██╗ ██╔╝██╔══╝  ██╔══██╗                  │
+│ ╚██████╔╝███████╗██║ ╚████╔╝ ███████╗██║  ██║                  │
+│  ╚═════╝ ╚══════╝╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝                  │
+│                                                                 │
+│              ████╗ █████╗ ███████╗ ██████╗ ██╗     ███████╗    │
+│              ██╔═╝██╔══██╗██╔════╝██╔════╝ ██║     ██╔════╝    │  
+│              ████║ ███████║█████╗  ██║  ███╗██║     █████╗      │
+│              ██╔═╝ ██╔══██║██╔══╝  ██║   ██║██║     ██╔══╝      │
+│              ████║ ██║  ██║███████╗╚██████╔╝███████╗███████╗    │
+│              ╚═══╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚══════╝╚══════╝    │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+Fullest Stack Developer | Event-Stream-Processing | Venture Builder
+Willkommen zu meinem interaktiven Terminal-CV!
+
+Verfügbare Commands:
+  cv --help           Alle verfügbaren Commands anzeigen
+  cv --lernreise      Meine Lernreise von 2001 bis heute  
+  cv --skills         Technische Kompetenzen und Expertise
+  cv --ventures       Interne Ventures: Assistify &amp; DB Curbside Management
+cv --about          Persönliche Informationen
+  cv --export         CV in verschiedenen Formaten exportieren
+
+Tipp: Verwenden Sie Tab für Auto-Completion!
+</div> <div class="terminal-input-line" data-astro-cid-vg3gbttd> <span class="terminal-prompt" data-astro-cid-vg3gbttd>$</span> <input type="text" class="terminal-input" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="Geben Sie einen Command ein..." data-astro-cid-vg3gbttd> </div> </div> </div> <script type="module">
+const cvData = {"personal":{"name":"Oliver Jägle","title":"Fullest Stack Developer","subtitle":"Event-Stream-Processing | Venture Builder","company":"DB Systel GmbH","tenure":"12+ Jahre","location":"Deutschland"},"mission":{"intro":"Meine berufliche Entwicklung ist geprägt von kontinuierlichem Lernen in unterschiedlichsten Kontexten. Dabei habe ich früh Anpassungsfähigkeit als Kernkompetenz entwickelt und diese über 23 Jahre immer weiter verfeinert.","focus":"GenAI im Software Engineering - wo ist die Grenze zwischen 'KI kann das besser' und 'das sollte ein Engineer machen'?","philosophy":"Anpassungsfähigkeit als Kernkompetenz - jeden Tag etwas Neues lernen"},"timeline":[{"period":"2001-2004","title":"Grundstein bei IBM","emoji":"🎯","learned":{"core":"Schnelle Einarbeitung in unterschiedlichste Kontexte und Technologien"},"context":"Duales Studium in verschiedensten Projektumgebungen","skills":["Java","XML","SQL","OOP Patterns","Client-Server Architecture","ERP Integration"]},{"period":"2004-2012","title":"SAP Spezialisierung","emoji":"🔧","learned":{"process":"Hinter jedem Prozess steckt eine Idee - die Intention ist entscheidend","architecture":"Strukturiertes Vorgehen auf hohem Abstraktionsniveau"},"context":"Enterprise Software Development mit internationalen Teams","skills":["ABAP OO","SAP Business Object Model","Metadata Architecture","Quality Assurance"]},{"period":"2012-2019","title":"DB Systel Leadership","emoji":"👥","learned":{"people":"Mit Menschen sprechen, um zu verstehen, was sie wirklich im Geschäft tun","business":"There's nothing more illogical than business logic"},"context":"Lead Architekt SAP-Eigenentwicklung, internationale Projektleitung (Deutschland/Indien)","skills":["ABAP from Scratch","Large-Scale System Design","International Team Management (12 Entwickler)"],"impact":["80M€ Jahresumsatz Systemverantwortung","Erstes agiles SAP-Projekt","Erstes Global Sourcing Projekt"]},{"period":"2017-2018","title":"Industry Recognition","emoji":"🎤","learned":{"teaching":"Interaktion mit Lesenden bringt bessere Ergebnisse als alles vorab zu beschreiben"},"context":"SAP BOPF-Experte, Trainer für SAP, Speaker bei TechEd & DSAG","skills":["Advanced Training Techniques","Conference Speaking","Content Creation"]},{"period":"2019-2024","title":"Venture Builder","emoji":"🚀","learned":{"assistify":"In einem Konzern ist es gar nicht so einfach, erfolgreich zu scheitern","curbside":"Eine noch so gute technische Anwendung hilft nichts, wenn Konkurrenten Preisdumping machen können"},"context":"Zwei interne Ventures: Conversational AI & Smart Mobility für Kommunen","skills":["MongoDB","Meteor","JavaScript","TypeScript","Node.js","Vue.js","Spring Boot","Apache Flink","Kafka"],"impact":["Vollspektrum: Produktgestaltung bis Marketing","Open Source Contributions (Rocket.Chat)"]},{"period":"2024-heute","title":"KI-Grenze erforschen","emoji":"🤖","learned":{"challenge":"Täglich lernen: Was ist wirklich Software Engineering und wo verläuft die Grenze zwischen 'KI kann das besser' und 'das sollte ein Engineer machen'?"},"context":"Event-Stream PoCs + GenAI Integration","skills":["Flink Java Streaming API","State Management","Checkpointing","GenAI Integration","bolt.diy Contributions"]}],"technical_skills":{"event_stream_processing":{"name":"Event-Stream Processing","specialization":true,"technologies":[{"name":"Apache Flink","details":"Java Streaming API, State Management, Timers, Checkpoints"},{"name":"Apache Kafka","details":"Event-Driven Architecture, Real-time Data Processing"},{"name":"Geospatial","details":"Fahrzeugortung, Geofencing, Geospatial-Formate"}]},"fullstack":{"name":"Full-Stack Development","technologies":[{"name":"Frontend","details":"Vue.js, JavaScript/TypeScript, HTML5/CSS3, Responsive Design"},{"name":"Backend","details":"Node.js, Java (Spring Boot), ABAP OO, RESTful APIs"},{"name":"Databases","details":"MongoDB, SQL, SAP HANA, Data Modeling"}]},"cloud_devops":{"name":"Cloud & DevOps","technologies":[{"name":"Plattformen","details":"AWS, OpenShift, Container Technologies"},{"name":"Methoden","details":"CI/CD Pipelines, Infrastructure as Code"}]},"languages":{"name":"Sprachen & Philosophie","technologies":[{"name":"Sprachen","details":"Deutsch (Muttersprache), Englisch (fließend), Französisch (sehr gut)"},{"name":"Philosophie","details":"Kompetenz über Zertifizierungen"}]}},"ventures":[{"name":"Assistify","period":"2019-2024","type":"Conversational AI","mission":"Wissen aus Gruppenchats extrahieren","technology":["MongoDB","Meteor","JavaScript","Rocket.Chat Integration"],"learnings":["Full-Stack Venture Building von Produktgestaltung bis Marketing","Open Source Impact mit weltweit relevanten Rocket.Chat Contributions","Konzern-Realität: \"Fail Fast\" ist schwieriger als gedacht - Erfolg vs. Wirtschaftlichkeit"],"platform":"OpenShift Container Platform"},{"name":"DB Curbside Management","period":"2022-2024","type":"Smart Mobility","mission":"Mikromobilität für Städte/Gemeinden steuerbar machen","technology":["TypeScript","Node.js","Vue.js","Apache Flink","Kafka","AWS"],"innovation":["Event-Stream Processing für Real-time Geodaten","Municipal Software für Roller/Fahrrad-Management"],"learnings":["SaaS-Marktdynamik verstehen - Monthly Recurring Revenue wichtiger als technische Exzellenz","Product Owner Rolle mit taktischer Produktentwicklung"],"platform":"AWS Cloud Services"}],"speaking":{"conferences":[{"name":"SAP TechEd 2017","topic":"BOPF (Business Object Processing Framework) Deep Dive","audience":"~300 SAP Entwickler international"},{"name":"DSAG 2018","topic":"Best Practices für Enterprise ABAP Entwicklung","audience":"SAP Enterprise Kunden"}],"content_philosophy":"Blog-Serie statt Buch gewählt - 'Interaktion mit Lesenden bringt bessere Ergebnisse'","open_source":[{"name":"Rocket.Chat","contribution":"Features und Bugfixes"},{"name":"bolt.diy","contribution":"Architektur und LLM-Unabhängigkeit"}]},"about":{"highlights":["12+ Jahre DB Systel Loyalität - verlässlich und beständig","Zwei erfolgreiche interne Ventures aufgebaut","Von ABAP zu Event-Stream-Processing - kontinuierliche Lernkurve","Open Source Contributor (Rocket.Chat, bolt.diy)","SAP TechEd & DSAG Speaker-Erfahrung"]},"export_formats":[{"format":"pdf","description":"Klassisches CV als PDF","status":"in_development"},{"format":"json","description":"Strukturierte Daten als JSON","status":"in_development"},{"format":"md","description":"Markdown für GitHub/Docs","status":"in_development"}]};
+
+const terminalContent = document.getElementById('terminal-content');
+const terminalInput = document.getElementById('terminal-input');
+
+const commands = {
+  help: () => `
+Verfügbare Commands:
+
+cv --lernreise          Vollständige Lernreise anzeigen
+cv --lernreise --timeline    Chronologische Timeline
+cv --lernreise --zeitraum=2019-2024    Spezifischer Zeitraum
+
+cv --skills             Alle technischen Skills
+cv --skills --tech=flink    Spezifische Technologie
+cv --skills --kategorie=fullstack    Nach Kategorie
+
+cv --ventures           Alle internen Ventures
+cv --ventures --assistify    Details zu Assistify
+cv --ventures --curbside     Details zu DB Curbside
+
+cv --about              Persönliche Informationen
+cv --speaking           Vorträge und Community Engagement
+cv --export --format=pdf     Export in PDF Format
+cv --export --format=json    Export als JSON
+
+clear                   Terminal leeren
+  `,
+  
+  lernreise: (args) => {
+    if (args?.includes('--timeline')) {
+      let output = `
+📅 Lernreise Timeline: ${cvData.mission.intro.split('.')[0]}
+
+`;
+      cvData.timeline.forEach(phase => {
+        output += `${phase.period}: ${phase.title} ${phase.emoji}\n`;
+        if (phase.learned.core) output += `→ ${phase.learned.core}\n`;
+        if (phase.learned.process) output += `→ ${phase.learned.process}\n`;
+        if (phase.learned.architecture) output += `→ ${phase.learned.architecture}\n`;
+        if (phase.learned.people) output += `→ ${phase.learned.people}\n`;
+        if (phase.learned.business) output += `→ ${phase.learned.business}\n`;
+        if (phase.learned.teaching) output += `→ ${phase.learned.teaching}\n`;
+        if (phase.learned.assistify) output += `→ Assistify: ${phase.learned.assistify}\n`;
+        if (phase.learned.curbside) output += `→ DB Curbside: ${phase.learned.curbside}\n`;
+        if (phase.learned.challenge) output += `→ ${phase.learned.challenge}\n`;
+        if (phase.impact) {
+          phase.impact.forEach(impact => output += `→ ${impact}\n`);
+        }
+        output += `\n`;
+      });
+      return output;
+    }
+    
+    return `
+🌟 Lernreise: ${cvData.mission.intro.split('.')[0]}
+
+${cvData.mission.intro}
+
+Verwenden Sie: cv --lernreise --timeline für die komplette Timeline!
+    `;
+  },
+
+  skills: () => {
+    let output = `
+🛠️ Technische Kompetenzen
+
+`;
+    
+    Object.values(cvData.technical_skills).forEach(category => {
+      const specialization = category.specialization ? ' ⭐' : '';
+      output += `${category.name}${specialization}:\n`;
+      category.technologies.forEach(tech => {
+        output += `  ${tech.name}: ${tech.details}\n`;
+      });
+      output += `\n`;
+    });
+    
+    return output;
+  },
+
+  ventures: (args) => {
+    const assistify = cvData.ventures.find(v => v.name === 'Assistify');
+    const curbside = cvData.ventures.find(v => v.name === 'DB Curbside Management');
+    
+    if (args?.includes('--assistify') && assistify) {
+      return `
+🤖 ${assistify.name} (${assistify.period}) - ${assistify.type} Venture
+
+Mission: ${assistify.mission}
+Technologie: ${assistify.technology.join(', ')}
+
+Gelernte Lektionen:
+${assistify.learnings.map(learning => `• ${learning}`).join('\n')}
+
+Plattform: ${assistify.platform}
+      `;
+    }
+    
+    if (args?.includes('--curbside') && curbside) {
+      let output = `
+🛴 ${curbside.name} (${curbside.period}) - ${curbside.type} Venture
+
+Mission: ${curbside.mission}
+Technologie: ${curbside.technology.join(', ')}
+
+`;
+      if (curbside.innovation) {
+        output += `Innovation:\n${curbside.innovation.map(innovation => `• ${innovation}`).join('\n')}\n\n`;
+      }
+      output += `Gelernte Lektionen:\n${curbside.learnings.map(learning => `• ${learning}`).join('\n')}\n\nPlattform: ${curbside.platform}\n`;
+      return output;
+    }
+    
+    return `
+🚀 Interne Ventures bei ${cvData.personal.company}
+
+${cvData.ventures.map(venture => 
+      `${venture.name} (${venture.period}):\n  ${venture.type} - ${venture.mission}\n  → cv --ventures --${venture.name.toLowerCase().replace(/\\s+/g, '')} für Details`
+    ).join('\n\n')}
+
+Beide Ventures: Vollspektrum-Erfahrung von Technik bis Business
+    `;
+  },
+
+  about: () => `
+👋 ${cvData.personal.name}
+
+Position: ${cvData.personal.title} mit Event-Stream-Processing Spezialisierung
+Aktuell: ${cvData.personal.company} (${cvData.personal.tenure})
+Standort: ${cvData.personal.location}
+
+Besonderheiten:
+${cvData.about.highlights.map(highlight => `• ${highlight}`).join('\n')}
+
+Lernphilosophie:
+"${cvData.mission.philosophy}"
+
+Aktueller Fokus:
+${cvData.mission.focus}
+  `,
+
+  speaking: () => `
+🎤 Speaking & Community Engagement
+
+${cvData.speaking.conferences.map(conf => 
+    `${conf.name}:\n• ${conf.topic}\n• Audience: ${conf.audience}`
+  ).join('\n\n')}
+
+Content Creation Approach:
+• ${cvData.speaking.content_philosophy}
+• Didaktische Entwicklung durch Trainer-Tätigkeit für SAP
+
+Open Source Contributions:
+${cvData.speaking.open_source.map(contrib => 
+    `• ${contrib.name}: ${contrib.contribution}`
+  ).join('\n')}
+  `,
+
+  export: (args) => {
+    const formats = cvData.export_formats;
+    
+    if (args?.includes('--format=pdf')) {
+      const pdf = formats.find(f => f.format === 'pdf');
+      return `📄 ${pdf?.description} wird vorbereitet... (${pdf?.status === 'in_development' ? 'Feature in Entwicklung' : pdf?.status})`;
+    }
+    if (args?.includes('--format=json')) {
+      const json = formats.find(f => f.format === 'json');
+      return `📊 ${json?.description} wird vorbereitet... (${json?.status === 'in_development' ? 'Feature in Entwicklung' : json?.status})`;
+    }
+    
+    return `
+📥 Export-Optionen:
+
+${formats.map(format => 
+      `cv --export --format=${format.format}     ${format.description}`
+    ).join('\n')}
+
+Alle Formate basieren auf der strukturierten Lernreise-Datenbank.
+    `;
+  }
+};
+
+function processCommand(input) {
+  const trimmed = input.trim().toLowerCase();
+  
+  if (trimmed === 'clear') {
+    // Clear all output except welcome message
+    const outputElements = terminalContent.querySelectorAll('.terminal-output');
+    outputElements.forEach(el => el.remove());
+    return null;
+  }
+  
+  if (trimmed === '' || trimmed === 'cv') {
+    return commands.help();
+  }
+  
+  // Parse cv commands
+  if (trimmed.startsWith('cv ')) {
+    const args = trimmed.substring(3);
+    
+    if (args.startsWith('--help')) {
+      return commands.help();
+    } else if (args.startsWith('--lernreise')) {
+      return commands.lernreise(args);
+    } else if (args.startsWith('--skills')) {
+      return commands.skills();
+    } else if (args.startsWith('--ventures')) {
+      return commands.ventures(args);
+    } else if (args.startsWith('--about')) {
+      return commands.about();
+    } else if (args.startsWith('--speaking')) {
+      return commands.speaking();
+    } else if (args.startsWith('--export')) {
+      return commands.export(args);
+    }
+  }
+  
+  return `Command nicht gefunden: ${input}\nVerwenden Sie 'cv --help' für alle Commands.`;
+}
+
+function addOutput(text, className = '') {
+  const outputDiv = document.createElement('div');
+  outputDiv.className = `terminal-output ${className}`;
+  outputDiv.textContent = text;
+  
+  // Insert before the input line
+  const inputLine = terminalContent.querySelector('.terminal-input-line');
+  terminalContent.insertBefore(outputDiv, inputLine);
+  
+  // Scroll to bottom
+  terminalContent.scrollTop = terminalContent.scrollHeight;
+}
+
+function addCommandEcho(command) {
+  const echoDiv = document.createElement('div');
+  echoDiv.className = 'terminal-output';
+  echoDiv.innerHTML = `<span class="terminal-prompt">$</span> ${command}`;
+  
+  const inputLine = terminalContent.querySelector('.terminal-input-line');
+  terminalContent.insertBefore(echoDiv, inputLine);
+}
+
+// Handle input
+terminalInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    const command = terminalInput.value;
+    if (command.trim()) {
+      addCommandEcho(command);
+      const output = processCommand(command);
+      if (output) {
+        addOutput(output);
+      }
+    }
+    terminalInput.value = '';
+  }
+});
+
+// Focus input on load
+terminalInput.focus();
+
+// Keep input focused
+document.addEventListener('click', () => {
+  terminalInput.focus();
+});
+</script> </body> </html>

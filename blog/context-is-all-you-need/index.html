@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="de" data-astro-cid-sckkx6r4> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Warum Context Engineering die wichtigste Fähigkeit für KI-gestützte Softwareentwicklung ist und wie sich der Fokus von Prompt Engineering zu intelligentem Kontext-Management verschiebt."><title>Context is all you need</title><style>:root{--max-width: 65ch;--font-sans: system-ui, -apple-system, BlinkMacSystemFont, sans-serif}body{font-family:var(--font-sans);line-height:1.6;max-width:var(--max-width);margin:0 auto;padding:2rem 1rem}nav[data-astro-cid-sckkx6r4]{margin-bottom:2rem}nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#333;text-decoration:none;margin-right:1rem}nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover{text-decoration:underline}img[data-astro-cid-sckkx6r4]{max-width:100%;height:auto}
+</style></head> <body data-astro-cid-sckkx6r4> <nav data-astro-cid-sckkx6r4> <a href="/" data-astro-cid-sckkx6r4>Home</a> <a href="/blog" data-astro-cid-sckkx6r4>Blog</a> <a href="/cv" data-astro-cid-sckkx6r4>CV</a> <a href="/cli" data-astro-cid-sckkx6r4>Terminal</a> </nav> <main data-astro-cid-sckkx6r4>  <article> <h1>Context is all you need</h1> <time datetime="2025-07-02T00:00:00.000Z"> 2.7.2025 </time>  <h1 id="context-is-all-you-need">Context is all you need</h1>
+<blockquote>
+<p>tl;dr: “Context Engineering ist die Kernkompetenz für erfolgreiche KI-gestützte Softwareentwicklung. Der Schlüssel liegt daring, phasenspezifisch die passenden Tools und den relevantem Kontext bereit zu stellen.”</p>
+</blockquote>
+<p>Wie schon geschrieben erlebe ich als Entwickler gerade die größte Umwälzung unserer Profession seit der Einführung des Internets. Während ich früher meiner Tochter erklärte, dass Programmieren wie professionelles Lego-Bauen sei (nur dass das Aufräumen schneller geht), muss ich heute hinzufügen: “Und neuerdings erkläre ich dem Computer auf Deutsch, was ich bauen möchte. Und dann macht er einen wie ein Lego-Bau-Roboter das großteils selbst”</p>
+<p>Dabei frage ich mich immer wieder: Wie kann es sein, dass diese LLMs so verdammt gut raten? “Verstehen” im menschlichen Sinne tun sie ja nicht, egal wie oft sie das behaupten. Dann denke ich an Transformer und das berühmte Paper “Attention is all you need” aus 2017: Aus dem Bekannten wird mittels statistischer Methoden der wahrscheinlichste  Fortgang ermittelt. Man könnte auch sagen: Aus dem Kontext abgleitet, wie es zur Aufmerksamkeit (“Attention”) eben gut passt. Und dann wird mir klar: Man kann Aufmerksamkeit lenken.</p>
+<p>Wie immer bin ich natürlich nicht der einzige mit dem Gedanken, am besten brachte es Tobi Lütke, der Nerd-CEO von Shopify, kürzlich auf den Punkt:</p>
+<p><img alt="\"I really like the term &#x27;context engineering&#x27; over prompt engineering. It describes the core skill better: the art of providing all the context for the task to be plausibly solvable by the LLM.\"" width="603" height="303" loading="lazy" decoding="async" src="/_astro/12_twitter_context.D5cMf_c__1zSEPY.webp" ></p>
+<h2 id="context-engineering-schlägt-prompt-engineering">Context Engineering schlägt Prompt Engineering</h2>
+<p>Dieser Perspektivwechsel ist fundamental. Prompt Engineering fragt: “Wie soll das LLM arbeiten?” Context Engineering fragt: “Welche Informationen braucht es?”</p>
+<p>Es ist wie der Unterschied zwischen einem Mikromanager und einem guten Teamleiter. Der Mikromanager erklärt jeden Arbeitsschritt im Detail. Der gute Teamleiter sorgt dafür, dass alle relevanten Informationen verfügbar sind und lässt das Team dann arbeiten.</p>
+<p><strong>Praktisches Beispiel:</strong></p>
+<ul>
+<li>
+<p><strong>Prompt Engineering</strong>: “Schreibe sauberen, gut dokumentierten Code mit Error Handling und folge den SOLID-Prinzipien…”
+=> Imperativ</p>
+</li>
+<li>
+<p><strong>Context Engineering</strong>: Hier sind die bestehende Architektur, die Coding Standards, die aktuellen Tests und ähnliche Implementierungen im Projekt.
+=> Kontextuell explorativ</p>
+</li>
+</ul>
+<p><em>Anmerkung: Seitdem ich anfing, diesen Post zu schreiben, quillt das Internet über mit unterschiedlichen Definitionen von “Context-Engineering”. Ich verwende den Term hier naiv: Ohne Frameworks, Tools oder anderen heißen Sch…, mit dem man “Context Engineering” anscheinen auch assoziieren kann: Für mich heißt der Begriff nur, dass ich als Entwickler mir bewusste Gedanken zum Kontext der Konversation mit einem LLM mache und dabei aktiv diesen gestalte.</em></p>
+<p>Auch das ist alles nicht neu: Seit es LLMs gab, haben sich viele schlaue Menschen Gedanken gemacht, wie man dem LLM möglichst gut klar macht, in welchem Kontext es bitte arbeiten möge.</p>
+<h2 id="die-grenzen-bisheriger-ansätze">Die Grenzen bisheriger Ansätze</h2>
+<p>In den letzten zwei Jahren habe ich verschiedene Ansätze zur Kontext-Bereitstellung beobachtet und selbst ausprobiert:</p>
+<h3 id="der-mega-prompt-ansatz">Der Mega-Prompt Ansatz</h3>
+<p><strong>Die Idee</strong>: Alles in einen riesigen System Prompt packen - von Coding Standards über Architektur-Prinzipien bis hin zu Deployment-Prozessen.</p>
+<p><img alt="An information-overloaded AI agent" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/13-robot-information-overload.BmRMPqqB_Z1MhxBl.webp" ></p>
+<p><strong>Das Problem</strong>: Diese Prompts werden schnell unübersichtlich, stoßen an Token-Limits und verwässern durch irrelevante Informationen. Ein 5000-Zeichen Prompt mit allem von API-Dokumentation bis zu Git-Workflows hilft nicht, wenn ich nur einen kleinen Bug fixen will.</p>
+<h3 id="der-agenten-ansatz">Der Agenten-Ansatz</h3>
+<p><strong>Die Idee</strong>: Separate Systeme sammeln und filtern automatisch den relevanten Kontext. Ein Agent durchsucht Files, ein anderer analysiert Dependencies, ein dritter entscheidet über Relevanz.</p>
+<p><img alt="Isolated agents, each responsible for a small step" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/14-agent-workflow.DtYyEAcp_Z1Yt4Gq.webp" ></p>
+<p><strong>Das Problem</strong>: Agenten arbeiten selektiv und bremsen so die natürliche Flexibilität von LLMs aus. Sie fügen eine zusätzliche Abstraktionsschicht hinzu, die oft mehr Probleme schafft als löst. Das LLM wird zum passiven Empfänger statt zum aktiven Orchestrator.</p>
+<h3 id="der-ide-integration-ansatz">Der IDE-Integration Ansatz</h3>
+<p><strong>Die Idee</strong>: Der Entwickler wählt relevante Files und Kontext aus, die IDE übergibt diese an das LLM.</p>
+<p><img alt="A software developer passing on relevant files to an LLM in her IDE" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/15-ide-collaboration.Wm0oXlhs_ZyAV26.webp" ></p>
+<p><strong>Das Problem</strong>: Das überfordert uns Menschen. Welche 10 von 200 Files sind für diese Änderung relevant? Wir sind schlecht darin, Kontext-Relevanz einzuschätzen, besonders bei komplexen Systemen. Außerdem ist es inkonsistent - jeder macht es anders.</p>
+<h2 id="meine-erfahrungen">Meine Erfahrungen</h2>
+<p>Ich war nie Experte in einem dieser Ansätze, aber ich habe sie alle ausprobiert und dabei - auch ohne Evals oder quantitative Analysen - mitbekommen, wie sich unterschiedliche Ansätze verhalten.</p>
+<p>Über die Zeit habe ich mir verschiedene Tools und Methoden überlegt, wie ich ein LLM auch über komplexe Aufgaben oder längere Interaktionen vorhersagbar steuern kann. Mit großen Prompts, mit Agenten, mit permanent getunetem Kontext. Aber gerade über einen längeren Zeitraum fühlte sich das nicht passend an, besonders wenn man in einem Dialog über mehrere Prozessschritte arbeitet.</p>
+<p><strong>Das Problem der langen Dialoge</strong>: Je länger die Interaktion, desto mehr verliert sich der ursprüngliche Kontext. Das LLM “vergisst” wichtige Informationen oder fokussiert auf die falschen Details. Gleichzeitig wird der Kontext immer unspezifischer, weil man versucht, alles abzudecken.</p>
+<p><strong>Die Erkenntnis</strong>: Dabei fiel mir auf: In verschiedenen Phasen eines Projekts brauchte ich völlig unterschiedliche
+Informationen. Statt zu versuchen, alles gleichzeitig bereitzustellen, sollte man phasenspezifisch denken.</p>
+<p>Das war der Moment, in dem mir klar wurde: Context Engineering ist nicht nur eine andere Art, Prompts zu schreiben. Es ist eine fundamental andere Herangehensweise an die Zusammenarbeit mit LLMs: Es geht darum, als Engineer dem LLM zum richtigen Zeitpunkt die passenden Informationen an die Hand zu geben, damit dieser dann voll seine Stärken bei Geschwindigkeit, Übersicht und Sorgfalt ausspielen kann!</p>
+<p><img alt="Ein Software-Ingenieur übergibt relevante Werkzeuge und Kontextinformationen an einen Agenten" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/19-implementation-practice.CKTFWdUA_ZuMbbe.webp" ></p>
+<p>Aber wie diese Erkenntnis in konkrete Werkzeuge und Methoden umsetzen? Das wird Inhalt eines weiteren Posts…</p>
+<hr>
+<p><em>Dieser Blogpost ist Teil meiner Serie über die Transformation der Softwareentwicklung durch KI. Wenn du Fragen hast oder deine eigenen Erfahrungen teilen möchtest, freue ich mich über den Austausch in den Kommentaren.</em></p>  </article>  </main> </body></html>

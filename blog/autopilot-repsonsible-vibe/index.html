@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="de" data-astro-cid-sckkx6r4> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="description" content="Wie eine provokante Frage über KI-entwickelte Autopiloten zur Erkenntnis führte, dass Vertrauen in Software durch strukturierte Prozesse entsteht - und wie responsible-vibe-mcp diese Erkenntnis in die Praxis umsetzt."><title>Von der Autopilot-Frage zur Responsible Development</title><style>:root{--max-width: 65ch;--font-sans: system-ui, -apple-system, BlinkMacSystemFont, sans-serif}body{font-family:var(--font-sans);line-height:1.6;max-width:var(--max-width);margin:0 auto;padding:2rem 1rem}nav[data-astro-cid-sckkx6r4]{margin-bottom:2rem}nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]{color:#333;text-decoration:none;margin-right:1rem}nav[data-astro-cid-sckkx6r4] a[data-astro-cid-sckkx6r4]:hover{text-decoration:underline}img[data-astro-cid-sckkx6r4]{max-width:100%;height:auto}
+</style></head> <body data-astro-cid-sckkx6r4> <nav data-astro-cid-sckkx6r4> <a href="/" data-astro-cid-sckkx6r4>Home</a> <a href="/blog" data-astro-cid-sckkx6r4>Blog</a> <a href="/cv" data-astro-cid-sckkx6r4>CV</a> <a href="/cli" data-astro-cid-sckkx6r4>Terminal</a> </nav> <main data-astro-cid-sckkx6r4>  <article> <h1>Von der Autopilot-Frage zur Responsible Development</h1> <time datetime="2025-07-13T00:00:00.000Z"> 13.7.2025 </time>  <h1 id="von-der-autopilot-frage-zur-responsible-development">Von der Autopilot-Frage zur Responsible Development</h1>
+<p>Mein geschätzter Freund Micha Kruppa stellte mir kürzlich eine provokante Frage: “Würdest du dich in ein Auto mit einem Vibe-coded Autopiloten setzen?” Mein spontaner Impuls war natürlich: “Nein!”</p>
+<p>Dann fragte ich mich aber: Würde ich mich denn in ein Auto mit einem von mir händisch entwickelten Autopiloten setzen? Die ehrliche Antwort: Ganz sicher auch nicht!</p>
+<p><strong>Aber warum eigentlich nicht?</strong> Es ging nicht um die Fähigkeiten - weder die des LLMs noch meine eigenen. Es ging um Vertrauen. Und Vertrauen in Software entsteht nicht durch die Brillanz des Entwicklers, sondern durch die Qualität des Entwicklungsprozesses. Ist dieser strukturiert, nachvollziehbar und enthält er sinnvolle Qualitätssicherungsmaßnahmen?</p>
+<p>Wenn ich das so schreibe, komme ich mir selbst etwas fremd vor - ich bin eigentlich nicht besonders prozesstreu. Aber ich merke immer mehr, dass das Ergebnis viel besser wird, wenn man einem strukturierten Prozess folgt.</p>
+<p>Das brachte mich zu einer fundamentalen Erkenntnis: Es ist nicht wichtig, WER die Software geschrieben hat - Mensch oder KI - sondern WIE sie entwickelt wurde.</p>
+<h2 id="das-problem-brillanz-ohne-strategische-richtung">Das Problem: Brillanz ohne strategische Richtung</h2>
+<p>In meinem letzten Post “Context is all you need” habe ich beschrieben, wie Context Engineering die wichtigste Fähigkeit für KI-gestützte Softwareentwicklung wird. Die Kernherausforderung dabei: <strong>LLMs sind außergewöhnlich kompetent und verfügen über mehr Wissen als jeder einzelne Entwickler. Aber ihnen fehlt das zielgerichtete Nach-Vorne-Denken.</strong></p>
+<p>Sie sind perfekt darin, auf den aktuellen Kontext zu reagieren und hochwertige Lösungen für das unmittelbare Problem zu finden. Was ihnen fehlt, ist die strategische Sicht über mehrere Schritte hinweg - das “Wo wollen wir in drei Schritten stehen?” und “Welche Entscheidungen treffen wir jetzt, die uns später helfen?”</p>
+<p>Verschiedene Ansätze haben versucht, diese Lücke zu schließen:</p>
+<ul>
+<li><strong>Mega-Prompts</strong> mit detaillierten Schritt-für-Schritt-Anweisungen (werden schnell unübersichtlich und starr)</li>
+<li><strong>Agenten-Systeme</strong> die automatisch den nächsten Schritt bestimmen (nehmen dem LLM die Flexibilität)</li>
+<li><strong>IDE-Integration</strong> wo Entwickler manuell die Richtung vorgeben (überfordert uns Menschen bei komplexen Projekten)</li>
+</ul>
+<p><img alt="Überforderung durch Information Overload" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/13-robot-information-overload.BmRMPqqB_Z1MhxBl.webp" ></p>
+<p>Aber alle diese Ansätze haben ein gemeinsames Problem: Sie versuchen, das LLM zu kontrollieren oder zu ersetzen, statt seine Stärken intelligent zu orchestrieren.</p>
+<h2 id="die-erkenntnis-engineering-ist-entscheidungsdokumentation">Die Erkenntnis: Engineering ist Entscheidungsdokumentation</h2>
+<p>Während ich über strukturierte Prozesse nachdachte, wurde mir noch etwas anderes klar: Prozessdokumentation ist nicht nur lästige Bürokratie - sie ist der Kern von Engineering.</p>
+<p>Im Rahmen eines Entwicklungsprozesses werden unzählige Entscheidungen getroffen, die die Lösung beeinflussen. Genau das ist Engineering: Das bewusste Treffen und Dokumentieren von Designentscheidungen. Und diese Entscheidungen müssen festgehalten werden - idealerweise als Teil des Repositories. Dann kann nämlich ein LLM darauf aufsetzen und auch in Zukunft kohärente Lösungen finden.</p>
+<h2 id="die-erweiterte-erkenntnis-qualität-durch-prozess-überall">Die erweiterte Erkenntnis: Qualität durch Prozess überall</h2>
+<p>Aber dann ging mir noch etwas auf: Diese Erkenntnis über Qualität durch strukturierte Prozesse beschränkt sich nicht nur auf Software-Engineering. <strong>Jeder digitale Arbeitsprozess profitiert von dieser Herangehensweise.</strong></p>
+<p>Das Schreiben dieses LinkedIn-Posts ist das perfekte Beispiel: Statt einfach drauflos zu schreiben, folgen wir einem strukturierten Prozess - Discovery (Thema klären), Story (Narrative entwickeln), Writing (Content erstellen), Illustration (Visuals hinzufügen), Distribution (Optimieren und veröffentlichen). Das Ergebnis ist fokussierter, konsistenter und qualitativ hochwertiger.</p>
+<p>Dasselbe gilt für Präsentationen, Dokumentationen, Projektplanungen - überall wo komplexe, mehrstufige Arbeit geleistet wird, sorgt ein strukturierter Prozess für bessere Ergebnisse.</p>
+<h2 id="die-lösung-responsible-vibe-mcp---ein-prozess-für-jeden-kontext">Die Lösung: Responsible Vibe MCP - Ein Prozess für jeden Kontext</h2>
+<p>Aus diesen Erkenntnissen heraus habe ich “responsible-vibe-mcp” entwickelt - einen Model Context Protocol (MCP) Server, der als intelligenter Konversations-Orchestrator für verschiedenste Arbeitsprozesse fungiert.</p>
+<p><strong>Was macht ihn besonders flexibel?</strong></p>
+<p>Das System erkennt, dass verschiedene Aufgaben völlig unterschiedliche Prozesse brauchen:</p>
+<p><img alt="Das richtige Werkzeug zur richtigen Zeit" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/15-right-tool-right-time.BHB9KEtN_ZRidxz.webp" ></p>
+<ul>
+<li>
+<p><strong>Greenfield-Projekte</strong>: Ideation → Architecture → Plan → Code → Document<br>
+<em>Für neue Projekte, die gründliche Vorplanung brauchen</em></p>
+</li>
+<li>
+<p><strong>Feature-Entwicklung (EPCC)</strong>: Explore → Plan → Code → Commit<br>
+<em>Für kleinere Features und iterative Entwicklung</em></p>
+</li>
+<li>
+<p><strong>Bug-Fixing</strong>: Reproduce → Analyze → Fix → Verify<br>
+<em>Fokussiert auf Debugging und Problemlösung</em></p>
+</li>
+<li>
+<p><strong>Minor Changes</strong>: Explore → Implement<br>
+<em>Streamlined für kleine Änderungen</em></p>
+</li>
+<li>
+<p><strong>Content Creation</strong>: Discovery → Story → Writing → Illustration → Distribution<br>
+<em>Für Blogposts, Präsentationen, Dokumentationen</em></p>
+</li>
+</ul>
+<p><strong>Der Kerngedanke:</strong> Das LLM bekommt nicht nur strategische Richtung, sondern den <strong>richtigen Prozess für die jeweilige Aufgabe</strong>. Ein Bugfix braucht andere Schritte als ein Greenfield-Projekt, und das System passt sich automatisch an.</p>
+<p>Schauen wir uns den Unterschied an: Ein <strong>Greenfield-Projekt</strong> durchläuft die Phasen Ideation → Architecture → Plan → Code → Document, weil bei neuen Projekten gründliche Vorplanung entscheidend ist:</p>
+<p><img alt="Greenfield Workflow Screenshot" width="2682" height="1682" loading="lazy" decoding="async" src="/_astro/screenshot-greenfield-workflow.CKOtB6pA_thkdN.webp" ></p>
+<p>Ein <strong>Bugfix</strong> hingegen folgt einem völlig anderen Muster: Reproduce → Analyze → Fix → Verify - fokussiert und zielgerichtet auf die Problemlösung:</p>
+<p><img alt="Bugfix Workflow Screenshot" width="1888" height="1412" loading="lazy" decoding="async" src="/_astro/screenshot-bugfix-workflow.BFd22YU9_1mH9Xh.webp" ></p>
+<p><strong>Wie funktioniert das konkret?</strong> Das LLM ruft nach jeder Benutzerinteraktion automatisch <code>whats_next()</code> auf und erhält phasenspezifische Anweisungen. Das ist also so etwas wie “phasenspezifisches Prompt-Engineering”.</p>
+<p>Hier sehen wir das System in Aktion - es erkennt automatisch, wann eine Phase abgeschlossen ist und leitet mit einem spezifischen Prompt zur nächsten über:</p>
+<p><img alt="EPCC Workflow mit Transition" width="3508" height="1490" loading="lazy" decoding="async" src="/_astro/screenshot-epcc-workflow-with-plan-complete-transition.B5lNz8dW_18RiVy.webp" >
+Über den Plan, der dabei übermittelt wird, wird der Kontext gefüttert und kontinuierlich erweitert.</p>
+<p>Das LLM behält seine volle kreative Flexibilität, bekommt aber die strategische Orientierung, die ihm normalerweise fehlt.</p>
+<h2 id="meta-beweis-diese-konversation-selbst">Meta-Beweis: Diese Konversation selbst</h2>
+<p>Das Schöne ist: Diese Konversation hier ist der lebende Beweis für die Funktionsweise. Während wir diesen Blogpost entwickeln, orchestriert das System unseren Entwicklungsprozess und dokumentiert ihn automatisch:</p>
+<p><img alt="Unser aktueller Entwicklungsplan" width="1378" height="1682" loading="lazy" decoding="async" src="/_astro/screenshot-development-plan-post.CbLsGJCC_1ar5Yf.webp" ></p>
+<p>Diese Dokumentation ist nicht nur für Menschen wertvoll - sie ermöglicht es auch zukünftigen LLM-Interaktionen, kohärent an diesem Projekt weiterzuarbeiten, ohne den Kontext zu verlieren.</p>
+<p><img alt="Posts Workflow mit Story-Phase Anweisungen" width="3508" height="1922" loading="lazy" decoding="async" src="/_astro/screenshot-posts-workflow-with-story-phase-instructions.7xjuZ2bY_Z27FAXP.webp" ></p>
+<h2 id="warum-das-funktioniert">Warum das funktioniert</h2>
+<p><strong>Strategische Führung ohne Mikromanagement</strong>: Das LLM bekommt klare Richtung für den nächsten Schritt, behält aber seine Kreativität und Problemlösungskompetenz.</p>
+<p><strong>Kontextspezifische Prozesse</strong>: Jede Aufgabe bekommt den Workflow, der zu ihr passt - von schnellen Bugfixes bis zu umfassenden Greenfield-Projekten.</p>
+<p><img alt="Phasenspezifische Arbeit" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/16-phase-specific-work.BGLI3Q2k_Z1c8Vkt.webp" ></p>
+<p><strong>Phasenspezifischer Kontext</strong>: Statt alles gleichzeitig zu laden, bekommt das LLM nur die für die aktuelle Phase relevanten Informationen und Tools.</p>
+<p><strong>Prozess-Gedächtnis</strong>: Die Markdown-Datei fungiert als persistenter Speicher für Entscheidungen und Fortschritt - das LLM muss nicht alles im Kopf behalten.</p>
+<p><strong>Intelligente Orchestrierung</strong>: Das System erkennt automatisch, wann eine Phase abgeschlossen ist und leitet zur nächsten über, ohne die natürliche Konversation zu unterbrechen.</p>
+<p><strong>Benutzerfreundlichkeit</strong>: Der Entwickler arbeitet ganz normal mit dem LLM - die Prozess-Orchestrierung passiert unsichtbar im Hintergrund.</p>
+<h2 id="responsible-development-in-der-praxis">Responsible Development in der Praxis</h2>
+<p>Was bedeutet das für die tägliche Arbeit?</p>
+<p><img alt="Implementation in der Praxis" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/19-implementation-practice.CKTFWdUA_ZuMbbe.webp" ></p>
+<p><strong>Für Menschen</strong>: Wir können uns auf die kreativen und strategischen Aspekte konzentrieren, während das System die Prozess-Compliance und Dokumentation sicherstellt.</p>
+<p><strong>Für LLMs</strong>: Sie bekommen die strategische Orientierung und den strukturierten Kontext, den sie brauchen, um ihre enormen Fähigkeiten optimal einzusetzen.</p>
+<p><strong>Für Teams</strong>: Entwicklungsentscheidungen werden automatisch dokumentiert und sind für alle nachvollziehbar - menschliche wie künstliche Teammitglieder.</p>
+<p><strong>Für verschiedene Arbeitstypen</strong>: Ob Software-Entwicklung, Content-Creation oder Präsentationen - jeder Prozess bekommt die Struktur, die er braucht.</p>
+<p><strong>Für die Zukunft</strong>: Projekte werden “LLM-ready” - neue Teammitglieder können sofort produktiv werden, weil der gesamte Entscheidungskontext verfügbar ist.</p>
+<h2 id="der-paradigmenwechsel">Der Paradigmenwechsel</h2>
+<p>Wir stehen vor einem Paradigmenwechsel in der digitalen Arbeit. Die Frage ist nicht mehr “Mensch oder KI?”, sondern “Wie schaffen wir Prozesse, die das Beste aus beiden Welten herausholen?”</p>
+<p>Responsible Development bedeutet:</p>
+<ul>
+<li><strong>Strategische Führung statt Kontrolle</strong>: LLMs bekommen Richtung, behalten aber ihre Flexibilität</li>
+<li><strong>Kontextspezifische Prozesse</strong>: Der richtige Workflow für jede Aufgabe</li>
+<li><strong>Dokumentation als Nebenprodukt</strong>: Entscheidungen werden automatisch festgehalten, ohne zusätzlichen Aufwand</li>
+<li><strong>Kontinuierliche Verbesserung</strong>: Prozesse lernen aus jedem Projekt dazu und werden intelligenter</li>
+</ul>
+<h2 id="fazit-vertrauen-durch-intelligente-orchestrierung">Fazit: Vertrauen durch intelligente Orchestrierung</h2>
+<p>Zurück zu Micha’s ursprünglicher Frage: Würde ich mich in ein Auto mit einem responsible-vibe-orchestrierten Autopiloten setzen? Wenn der Entwicklungsprozess transparent, nachvollziehbar und gut dokumentiert ist - definitiv eher als in eines mit unstrukturiert entwickelter Software, egal von wem sie stammt.</p>
+<p><img alt="Zukunft der Zusammenarbeit" width="1024" height="717" loading="lazy" decoding="async" src="/_astro/18-future-collaboration.B68maj1k_2pGcy8.webp" ></p>
+<p>Die Zukunft der digitalen Arbeit liegt nicht in der Konkurrenz zwischen Mensch und KI, sondern in der intelligenten Orchestrierung beider durch strukturierte, verantwortungsvolle Prozesse, die die Stärken beider Seiten optimal nutzen.</p>
+<hr>
+<p><strong>Wie orchestriert ihr eure LLM-Arbeitsprozesse? Welche Erfahrungen habt ihr mit strukturierten vs. unstrukturierten KI-Interaktionen gemacht?</strong></p>
+<p><strong>Wer Lust hat, responsible-vibe-mcp auszuprobieren:</strong> <a href="https://github.com/mrsimpson/responsible-vibe-mcp">GitHub Repository</a> - Feedback und Erfahrungsberichte sind sehr willkommen!</p>  </article>  </main> </body></html>
